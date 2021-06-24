@@ -3,15 +3,15 @@ function IdCard(props) {
     <div className="container">
       <img src={props.picture} alt="" />
       <br/>
-      <span>First Name: {props.firstName}</span>
+      <strong>First Name: </strong>{props.firstName}
       <br/>
-      <span>Last Name: {props.lastName}</span>
+      <strong>Last Name: </strong>{props.lastName}
       <br/>
-      <span>Gender: {props.gender}</span>
+      <strong>Gender: </strong>{props.gender}
       <br/>
-      <span>Height: {props.height}</span>
+      <strong>Height:</strong> {props.height}
       <br/>
-      <span>Birth: {props.birth}</span>
+      <strong>Birth: </strong>{props.birth}
     </div>
   );
 }

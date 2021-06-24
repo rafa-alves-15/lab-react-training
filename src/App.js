@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
+import Visa from './visa.png';
+import MasterCard from './master-card.svg';
 import IdCard from './IdCard';
 import Greetings from './Greetings';
 import Random from './Random';
 import BoxColor from './BoxColor';
-import CreditCard from './CreditCard';
+import Dice from './Dice';
+import LikeButton from './LikeButton';
+import ClickablePicture from './ClickablePicture';
+import NumbersTable from './NumbersTable';
+import SignUp from './SignUp';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { element } from 'prop-types';
 
 const people = [
   {
@@ -41,7 +46,7 @@ const rgbRef = [
 
 const creditCardsInfos = [
   {
-    type: "Visa",
+    type: 'Visa',
     number: '0123456789018845',
     expirationMonth: 3,
     expirationYear: 2021,
@@ -51,7 +56,7 @@ const creditCardsInfos = [
     color: 'white',
   },
   {
-    type: "MasterCard",
+    type: 'MasterCard',
     number: '0123456789010995',
     expirationMonth: 3,
     expirationYear: 2021,
@@ -116,23 +121,28 @@ function App() {
         })}
       </div>
       <div>
-        <h1>CreditCard</h1>
-        <div>
-          {creditCardsInfos.map((element) => {
-            return (
-              <CreditCard
-                type={element.type}
-                number={element.number}
-                expirationMonth={element.expirationMonth}
-                expirationYear={element.expirationYear}
-                bank={element.bank}
-                owner={element.owner}
-                bgColor={element.bgColor}
-                color={element.color}
-              ></CreditCard>
-            );
-          })}
-        </div>
+        <h1>LikeButton</h1>
+        <LikeButton />
+        <LikeButton />
+      </div>
+      <div>
+        <h1>ClickablePicture</h1>
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+      <div>
+        <h1>Dice</h1>
+        <Dice />
+      </div>
+      <div>
+        <h1>NumbersTable</h1>
+        <NumbersTable limit={12} />
+      </div>
+      <div>
+        <h1>SignUp</h1>
+        <SignUp />
       </div>
     </div>
   );

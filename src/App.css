@@ -1,8 +1,76 @@
-.App {
-  text-align: center;
+.container{
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px 0;
 }
 
+.title {
+  text-align: left;
+  font-size: 25pt;
+  font-weight: 700;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+/* id Card*/
+.card-box {
+  border: 1px solid #000;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+}
 
+.id-box {
+  text-align: left;
+  padding-right: 1vw;
+}
+.color {
+  border-color: #000;
+  border-width: thin;
+  border-style: solid;
+  color: white;
+  height: 10vh;
+  padding: 1vh;
+}
+.boxColor {
+  padding-bottom: 3px;
+}
+
+.cc-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14pt;
+  width: 30vw;
+  height: 30vh;
+  margin: 2vw;
+}
+
+.type-logo {
+  align-self: flex-end;
+  padding-right: 2vw;
+  padding-top: 2vh;
+}
+.card-number {
+  align-self: center;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  font-size: 18pt;
+}
+
+.info-bank {
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+.info-name {
+  padding-top: 0;
+}
+.credit.box {
+  display: flex;
+  flex-direction: row;
+}
+.bank.name {
+  margin-left: 2vw;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -14,32 +82,33 @@
   color: white;
 }
 
+.App-link {
+  color: #61dafb;
+}
 
-
-.id-cards {
+ .id-cards {
   width: 90%;
   margin: 0;
-}
+} */
 
-.card-box {
-  border: 1px solid #000;
-  margin: 10px 0;
-  padding: 5px;
-}
-
-.span-cards span {
+ .span-cards span { 
   width: 100vw;
   text-align: left;
   padding-left: 5px;
 }
 
-.text {
-  text-align: center;
-  color: white;
-  padding: 30px;
+.NumberTable {  
+  display: flex;  
+  margin: 0;
 }
 
-.color {
-  border: solid 1px gray;
-  margin: 15px;
+.NumberTable > li {
+  display: flex;  
+  list-style-type: none;  
+  height: 50px;  
+  width: 50px;  
+  border: 1px solid #000;  
+  justify-content: center;  
+  align-items: center;  
+  align-content: center;
 }

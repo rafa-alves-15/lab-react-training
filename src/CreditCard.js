@@ -5,7 +5,10 @@ import MasterCard from './master-card.svg';
 function CreditCard(props) {
   return (
     <div>
-      <img scr={props.type === 'Visa' ? Visa : MasterCard} alt="Flag"></img>
+      <img
+        src={props.type === 'Visa' ? Visa : MasterCard}
+        alt="CreditCard Flag"
+      ></img>
       <span>.... .... .... {props.number.split('').slice(12).toString()}</span>
       <span>
         Expire: {props.expirationMonth}/{props.expirationYear}
